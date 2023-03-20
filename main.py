@@ -80,18 +80,18 @@ skills_list = ["Стремительный прыжок",
                "Ледяной выстрел",
                "Огненный заряд"
                ]
-random_skills_list = random.sample(skills_list, 3)
-fake = Faker("ru_RU")
 
 
 def main():
     for number in range(10):
         runic_skills = []
+        random_skills_list = random.sample(skills_list, 3)
         for one_skill in random_skills_list:
             for symbol_1, symbol_translation in letters_mapping.items():
                 one_skill = one_skill.replace(symbol_1, symbol_translation)
             runic_skills.append(one_skill)
 
+        fake = Faker("ru_RU")
         context = {
             "first_name": fake.first_name_male(),
             "last_name": fake.last_name_male(),
