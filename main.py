@@ -34,7 +34,7 @@ skills_list = ["Стремительный прыжок", "Электричес�
 random_skills_list = random.sample(skills_list, 3)
 fake = Faker("ru_RU")
 
-print("check git")
+print("check gitt again ")
 
 def main():
     for number in range(10):
